@@ -1,8 +1,15 @@
+:root{
+    --primary-shadow-color: rgba(33, 36, 44, 0.875);
+   --primary-text-color:white;
+   --primary-fondo-tarjeta-color:#202322;
+}
+
 .body {
-    background-image: url('https://fondosmil.com/fondo/58596.jpg');
+    /* background-image: url('https://fondosmil.com/fondo/58596.jpg'); */
+    background-image: url('/img/fondo.webp');
     background-position: center;
     background-size: cover;
-    color: white;
+    color: var(--primary-text-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
 }
@@ -13,6 +20,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    
 
 }
 
@@ -37,7 +45,7 @@
 
 .card_header,
 .card__footer {
-    background-color: rgba(33, 36, 44, 0.875);
+    background-color: var(--primary-shadow-color);
     padding: 1rem;
 }
 
@@ -46,7 +54,7 @@
     overflow: hidden;
     width: 256px;
     height: 256px;
-    background-color: #202322;
+    background-color: val(--primary-fondo-tarjeta-color);
     margin: auto
 }
 
