@@ -1,54 +1,150 @@
-.body{
+.body {
+    background-image: url('https://fondosmil.com/fondo/58596.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.profile {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 
 }
-.profile{
+
+.profile_container {
+    padding: 0 1rem;
+}
+
+.card {
+    box-shadow: 0 0 0.125rem 0.125rem white;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 320px;
+    transition: box-shadow 0.25s;
+}
+
+.card:hover {
+    box-shadow:
+        0 0 0.125rem 0.125rem royalblue,
+        0 0 0.25rem 0.25rem royalblue,
+        0 0 0.75rem 0.75rem royalblue;
+}
+
+.card_header,
+.card__footer {
+    background-color: rgba(33, 36, 44, 0.875);
+    padding: 1rem;
+}
+
+.card_header-img-container {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 256px;
+    height: 256px;
+    background-color: #202322;
+    margin: auto
+}
+
+.card_header-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.card_body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: rgba(40, 44, 52, 00.875);
+    padding: 1rem;
+}
+
+
+
+.card_body-title,
+.card_body-keywords,
+.card_body-presentation {
+    margin: 0;
+    text-align: center;
 
 }
-.profile_container{
+
+.card_body-title {
+    font-size: 1.25rem;
+}
+
+.card_body-keywords {
+    font-size: 1.25rem;
+}
+
+.card_body-presentation {
+    font-size: 0.875rem;
+}
+
+
+/* .card_body-presentation:hover {
+    color: yellow;
+} */
+
+.card_body-presentation::before,
+.card_body-presentation::after{
+    content: '👍';
+}
+
+.card__footer-nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card__footer-nav-item {
+    display: flex;
 
 }
-.card{
 
+.card__footer-nav-link {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.25s;
 }
-.card_header{
 
+.card__footer-nav-link:hover {
+   transform: scale(1.25);
 }
-.card_header-img-container{
+.card__footer-nav-img {
+    fill: white;
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:845px) {
+    .card {
+        max-width: 320px;
+      }
     
-}
-
-.card_header-img{
-
-}
-
-
-.card_body{
-
-}
-
-.card_body-title{
-
-}
-.card_body-keywords{
-
-}
-.card_body-presentation{
+      .card__body {
+        gap: 1rem;
+        padding: 2rem;
+      }
+    
+      .card__body-title {
+        font-size: 1.5rem;
+      }
+    
+      .card__body-keywords {
+        font-size: 1.25rem;
+      }
+    
+      .card__body-presentation {
+        font-size: 1rem;
 
 }
-
-
-.card__footer{
-
-}
-.card__footer-nav-list{
-
-}
-.card__footer-nav-item{
-
-}
-.card__footer-nav-link{
-
-}
-.card__footer-nav-img{
-
 }
